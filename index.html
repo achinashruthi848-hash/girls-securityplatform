@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentina - Girl Security App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🌺 Sentina</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#emergency">Emergency</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#helpline">Helpline</a></li>
+            <li><a href="#tips">Safety Tips</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Your Safety, Our Priority</h1>
+        <p>A fast, reliable emergency assistant whenever you need help.</p>
+        <div class="sos-container">
+            <button id="sos-btn" class="sos-btn">SOS</button>
+        </div>
+    </header>
+
+    <section id="location" class="location-section">
+        <h2>Live Location</h2>
+        <div class="location-card">
+            <p id="lat-display">Latitude: Not available</p>
+            <p id="lon-display">Longitude: Not available</p>
+            <div class="location-actions">
+                <button id="get-loc-btn" class="btn">Get Location</button>
+                <a id="maps-link" href="#" target="_blank" style="display: none;" class="btn">Open in Google Maps</a>
+                <button id="share-loc-btn" class="btn btn-outlined" style="display: none;">Share Location</button>
+                <button id="offline-sms-btn" class="btn btn-outlined" style="display: none;">Offline SMS</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+        <h2>Emergency Contacts</h2>
+        <div class="contacts-container">
+            <form id="contact-form" class="card">
+                <h3>Add Contact</h3>
+                <input type="text" id="contact-name" placeholder="Name" required>
+                <input type="tel" id="contact-phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+                <button type="submit" class="btn">Save Contact</button>
+            </form>
+            <div class="contacts-list card">
+                <h3>Saved Contacts</h3>
+                <ul id="contacts-ul">
+                    <!-- Contacts will go here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="helpline" class="helpline-section">
+        <h2>Helpline Numbers</h2>
+        <div class="grid-container">
+            <div class="card helpline-card">
+                <h3>Women Helpline</h3>
+                <p class="number">181</p>
+                <a href="tel:181" class="btn btn-outlined">Call Now</a>
+            </div>
+            <div class="card helpline-card">
+                <h3>Police</h3>
+                <p class="number">100</p>
+                <a href="tel:100" class="btn btn-outlined">Call Now</a>
+            </div>
+            <div class="card helpline-card">
+                <h3>Ambulance</h3>
+                <p class="number">108</p>
+                <a href="tel:108" class="btn btn-outlined">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="tips-section">
+        <h2>Safety Tips</h2>
+        <div class="grid-container tips-grid">
+            <div class="card tip-card">
+                <h3>Be Aware</h3>
+                <p>Always stay alert and be aware of your surroundings, especially at night.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>Share Location</h3>
+                <p>Keep your live location shared with trusted contacts if you feel unsafe.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>Trust Instincts</h3>
+                <p>If a situation or place feels wrong, leave immediately.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>Self Defense Tools</h3>
+                <p>Carry items like pepper spray or a loud whistle for emergencies.</p>
+            </div>
+            <div class="card tip-card">
+                <h3>Fake a Call</h3>
+                <p>If you're being followed, pretend you are on a phone call with someone nearby.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sentina. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
